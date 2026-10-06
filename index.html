@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Background Image</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+        }
+
+        body {
+            /* REPLACE 'your-image.jpg' WITH YOUR IMAGE PATH OR URL */
+            background-image: url('2026.jpg');
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+        }
+
+        /* This creates invisible vertical space so the webpage can still scroll */
+        .scroll-space {
+            height: 2000px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Empty container to allow scrolling without displaying text -->
+    <div class="scroll-space"></div>
+
+</body>
+</html>
