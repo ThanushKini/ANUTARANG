@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Screen Background Image</title>
+    <title>Centered Fixed Image</title>
     <style>
+        /* Sets a clean background color for the rest of the page */
         html, body {
             margin: 0;
             padding: 0;
-            min-height: 100%;
+            height: 100%;
+            background-color: #f0f0f0; 
         }
 
         body {
             /* REPLACE 'your-image.jpg' WITH YOUR IMAGE PATH OR URL */
             background-image: url('2026.jpg');
-            background-position: center top;
+            
+            /* Keeps the image perfectly centered horizontally and vertically */
+            background-position: center center;
+            
+            /* Prevents the image from repeating */
             background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: scroll;
-        }
-
-        /* This creates invisible vertical space so the webpage can still scroll */
-        .scroll-space {
-            height: 1000px;
-            width: 50%;
+            
+            /* Forces the image to lock in place so it stays fixed */
+            background-attachment: fixed;
+            
+            /* Scales the image size to exactly 70% of the viewport width (vw) and height (vh) */
+            background-size: 70vw 70vh;
         }
     </style>
 </head>
 <body>
-
-    <!-- Empty container to allow scrolling without displaying text -->
-    <div class="scroll-space"></div>
-
 </body>
 </html>
